@@ -1,0 +1,29 @@
+{
+    "config": {
+        "title": "SwitchBot Cloud",
+        "step": {
+            "user": {
+                "title": "SwitchBot Cloud",
+                "description": "Account details",
+                "data": {
+                    "username": "Username",
+                    "password": "Password"
+                }
+            }
+        },
+        "error": {
+            "auth": "Username/Password is wrong."
+        }
+    },
+    "options": {
+        "step": {
+            "user": {
+                "data": {
+                    "cover": "Cover enabled",
+                    "sensor": "Sensor enabled",
+                    "switch": "Switch enabled"
+                }
+            }
+        }
+    }
+}

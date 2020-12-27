@@ -1,0 +1,11 @@
+{
+    "name": "SwitchBot Cloud",
+    "hacs": "1.6.0",
+    "domains": [
+        "cover",
+        "sensor",
+        "switch"
+    ],
+    "iot_class": "Cloud Polling",
+    "homeassistant": "0.118.0"
+}

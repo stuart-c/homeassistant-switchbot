@@ -1,0 +1,14 @@
+{
+  "domain": "switchbot_cloud",
+  "name": "SwitchBot Cloud",
+  "documentation": "https://github.com/stuart-c/homeassistant-switchbot",
+  "issue_tracker": "https://github.com/stuart-c/homeassistant-switchbot/issues",
+  "dependencies": [],
+  "config_flow": true,
+  "codeowners": [
+    "@stuart-c"
+  ],
+  "requirements": [
+    "python-switchbot @ https://github.com/jonghwanhyeon/python-switchbot/archive/main.zip"
+  ]
+}
