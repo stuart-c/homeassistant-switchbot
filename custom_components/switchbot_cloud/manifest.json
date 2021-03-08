@@ -1,7 +1,7 @@
 {
   "domain": "switchbot_cloud",
   "name": "SwitchBot Cloud",
-  "version": "dev",
+  "version": "0.0.0",
   "documentation": "https://github.com/stuart-c/homeassistant-switchbot",
   "issue_tracker": "https://github.com/stuart-c/homeassistant-switchbot/issues",
   "dependencies": [],
