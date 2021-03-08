@@ -10,7 +10,7 @@ LOGGER = logging.getLogger(__package__)
 # Base component constants
 NAME = "SwitchBot Cloud"
 DOMAIN = "switchbot_cloud"
-VERSION = "dev"
+VERSION = "0.0.4"
 ISSUE_URL = "https://github.com/stuart-c/homeassistant-switchbot/issues"
 
 SUPPORTED_PLATFORMS = [COVER_DOMAIN, SENSOR_DOMAIN, SWITCH_DOMAIN]
