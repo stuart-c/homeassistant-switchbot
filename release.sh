@@ -33,12 +33,16 @@ if [[ `git status --porcelain` ]]; then
   exit 1
 fi
 
-sed -i "/VERSION = /c\VERSION = \"$VERSION\"" custom_components/switchbot_cloud/const.py
+sed -i "s/VERSION = \"dev\"/\VERSION = \"$VERSION\"/" custom_components/switchbot_cloud/const.py
+sed -i "s/  \"version\": \"dev\",/  \"version\": \"$VERSION\",/" custom_components/switchbot_cloud/manifest.json
 git add custom_components/switchbot_cloud/const.py
+git add custom_components/switchbot_cloud/manifest.json
 git commit --message "Release $VERSION"
 git tag $TAG
 git push origin $TAG
-sed -i '/VERSION = /c\VERSION = "dev"' custom_components/switchbot_cloud/const.py
+sed -i -E "s/VERSION = \".+\"/\VERSION = \"dev\"/" custom_components/switchbot_cloud/const.py
+sed -i -E "s/  \"version\": \".+\",/  \"version\": \"dev\",/" custom_components/switchbot_cloud/manifest.json
 git add custom_components/switchbot_cloud/const.py
+git add custom_components/switchbot_cloud/manifest.json
 git commit --message "Prepare for next version"
 git push origin
